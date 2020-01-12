@@ -1,0 +1,5 @@
+*.preview-animate{
+    @media(max-width: $tablet-breakpoint){
+        animation: none;
+    }
+}

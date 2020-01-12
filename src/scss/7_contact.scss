@@ -1,0 +1,113 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 526px;
+
+  @media (max-width: $mobile-breakpoint){
+    padding-bottom: 290px;
+   }
+
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $tablet-breakpoint){
+      padding: 0 20px;
+    }
+  }
+
+  &__heading1 {
+    color: $color1;
+    font-family: $font2;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 42px;
+    @media (max-width: $tablet-breakpoint){
+      font-size: 24px;
+    }
+    @media (max-width: $mobile-breakpoint){
+      margin-bottom: 27px;
+    }
+  }
+
+  &__heading2 {
+    color: #eeeeee;
+    font-family: $font3;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+    @media (max-width: $tablet-breakpoint){
+      font-size: 32px;
+    }
+    @media (max-width: $mobile-breakpoint){
+      margin-bottom: 54px;
+      text-align: center;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__form-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #eeeeee;
+    font-family: $font5;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    border-bottom: 3px solid $color1;
+    width: 48%;
+    line-height: calc(21px * 2 + 16px);
+    margin-bottom: 81px;
+
+    @media (max-width: $tablet-breakpoint){
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: #eeeeee;
+      font-family: $font5;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__form-message {
+    color: #eeeeee;
+    font-family: $font5;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 130px;
+
+
+    @media (max-width: $mobile-breakpoint){
+      margin-bottom: 80px;
+     }
+  }
+  &__form-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
